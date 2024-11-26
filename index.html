@@ -1,226 +1,292 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CareTech Software</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-</head>
-<body>
-    <header class="lateral-info">
-        <div class="logo-projeto">
-            <figure>
-                <img src="https://cdn.discordapp.com/attachments/1298379995223167046/1310830203521597470/logo_pi.png?ex=6746a542&is=674553c2&hm=d14c02d04414246d26f737f010708fcbe06fa7bbc6781736ee57a3620c6a0219&" alt="Logo CareTech">
-            </figure>
-        </div>
-        <div class="mobile-menu">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <nav class="lista-nav" >
-            <ul class="items-nav">
-                <li>
-                    <a href="#pulseira-info">Pulseira</a>
-                </li>
-                <li>
-                    <a href="#locais">Locais</a>
-                </li>
-                <li>
-                    <a href="#dispositivos">Dispositivos IoT</a>
-                </li>
-                <li>
-                    <a href="#emergencia">Contatos de Urgência</a>
-                </li>
-                <li>
-                    <a href="#configuracoes">Configurações</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="user">
-            <figure>
-                <img src="https://img.freepik.com/vetores-premium/icone-perfil-simples-cor-branco-icone_1076610-50204.jpg?semt=ais_hybrid" alt="Usuario">
-            </figure>
-            <h3>Robson Brito</h3>
-        </div>
-    </header>
+/*IMPORTAÇÃO DAS FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-    <main class="all-info">
-        <section class="section-box" id="pulseira">
-            <div class="text">
-                <h3 class="title">Informações da Pulseira (FITBIT - SENSE2) </h3>
-                <p class="subtitle">Acompanhe os dados mais recentes da sua saúde:</p>
-            </div>
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #025159 ;
+    display: flex;
+    padding: 30px 20px;
+    max-width: 1280px;
+}
 
-            <div class="saude-usuario">
-                <div class="item-info">
-                    <h3 class="title-item">Batimentos Cardíacos</h3>
-                    <figure class="imagem-item">
-                        <img src="banco de imagens/37.5 por cento batimento cardíaco.png" alt="Ilustração batimento">
-                        <figcaption class="legenda-item">75 BPM</figcaption>
-                    </figure>
-                    <span>Última atualização: 5 segundos atrás</span>
-                </div>
+header {
+    background-color: #025159 ;
+    height: 100%;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
 
-                <div class="item-info">
-                    <h3 class="title-item">Nível de Estresse</h3>
-                    <figure class="imagem-item">
-                        <img src="banco de imagens/33 por cento.png" alt="Ilustração batimento">
-                        <figcaption class="legenda-item">MODERADO</figcaption>
-                    </figure>
-                    <span>Interação sugerida: Respiração guiada</span>
-                </div>
+.logo-projeto img {
+    width: 200px;
+}
 
-                <div class="item-info">
-                    <h3 class="title-item">Oxigenação do Sangue</h3>
-                    <figure class="imagem-item">
-                        <img src="banco de imagens/98 por cento.png" alt="Ilustração batimento">
-                        <figcaption class="legenda-item">98% IDEAL</figcaption>
-                    </figure>
-                    <span>Última atualização: 5 segundos atrás</span>
-                </div>
+.user {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
 
-                <div class="item-info">
-                    <h3 class="title-item">Temperatura da Pele</h3>
-                    <figure class="imagem-item">
-                        <img src="banco de imagens/36.5 por cento.png" alt="Ilustração batimento">
-                        <figcaption class="legenda-item">36.5°C</figcaption>
-                    </figure>
-                    <span>Dentro do intervalo normal</span>
-                </div>
-            </div>
-            <button type="submit" class="btn-att">Sincronizar Dados</button>
-        </section>
+.user figure img {
+    width: 100px;
+    border-radius: 100%;
+    border: solid 3px #03989e;
+}
 
-        <section class="section-box" id="tecnologias">
-                <div class="text">
-                    <h3 class="title">Gerenciar Dispositivos IoT</h3>
-                    <p class="subtitle">Adicione e gerencie seus dispositivos IoT no sistema:</p>
-                </div>
-            
-            <div class="controle-dispo">
-                <div class="adicionar">
-                    <div class="text-dispo">
-                        <h3 class="title-dispo">Adicionar Dispositivos</h3>
-                    </div>
-                    <form class="add-dispositivo">
-                            <label for="dispositivo">Nome do Dispositivo:</label>
-                            <input type="text" id="dispositivo" name="dispositivo" placeholder="Ex: Soundbar JBL" required>
-                            
-                            <label for="tipo">Tipo de Dispositivo:</label>
-                            <select id="tipo" name="tipo">
-                            <option value="iluminacao">Iluminação</option>
-                            <option value="temperatura">Temperatura</option>
-                            <option value="som">Som</option>
-                            <option value="outro">Outro</option>
-                            </select>
-                            
-                            <label for="local-associado">Local Associado:</label>
-                            <select id="local-associado" name="local-associado">
-                            <option value="sala">Sala de Estar</option>
-                            <option value="quarto">Quarto</option>
-                            <option value="cozinha">Cozinha</option>
-                            <option value="garagem">Garagem</option>
-                            </select>
-                            <button type="submit" class="btn">Adicionar Dispositivo</button>
-                    </form>
-                </div>
+.user h3 {
+    color: #fff;
+    font-weight: bolder;
 
-                <div class="gerenciar">
-                    <div class="text-dispo">
-                        <h3 class="title-dispo">Dispositivos Cadastrados</h3>
-                        <ul class="lista-dispo">
-                            <li class="item-dispo">
-                                <p><strong>Soundbar JBL</strong> - Local: Sala de Estar - Tipo: Som</p>
-                                <div class="btn">
-                                    <button class="btn-small">Editar</button>
-                                    <button class="btn-small btn-danger">Remover</button>
-                                </div>
-                            </li>
-                            <li class="item-dispo">
-                                <p><strong>Ar-Condicionado</strong> - Local: Quarto - Tipo: Temperatura</p>
-                                <div class="btn">
-                                    <button class="btn-small">Editar</button>
-                                    <button class="btn-small btn-danger">Remover</button>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+}
 
-        <section class="section-box" id="local">
-            <div class="text">
-                <h3 class="title">Gerenciar Locais</h3>
-                <p class="subtitle">Gerencie os locais onde seus dispositivos IoT estão instalados:</p>
-            </div>
-        
-        <div class="controle-dispo">
-            <div class="adicionar">
-                <div class="text-dispo">
-                    <h3 class="title-dispo">Gerenciar Locais IoT</h3>
-                </div>
-                <form class="add-dispositivo">
-                        <label for="dispositivo">Nome do Local:</label>
-                        <input type="text" id="nome-dispo" name="dispositivo" placeholder="Ex: Sala de Estar" required>
-                        <label for="descricao">Descrição:</label>
-                        <textarea id="descricao" name="descricao" rows="3" placeholder="Ex: Local principal para monitoramento"></textarea>
-                        <button type="submit" class="btn">Adicionar Local</button>
-                </form>
-            </div>
+.lista-nav {
+    padding: 0 20px;
+}
 
-            <div class="gerenciar">
-                <div class="text-dispo">
-                    <h3 class="title-dispo">Locais Cadastrados</h3>
-                    <ul class="lista-dispo">
-                        <li class="item-dispo">
-                            <p>Quarto - Monitoramento de sono ativo</p>
-                            <div class="btn">
-                                <button class="btn-small">Editar</button>
-                                <button class="btn-small btn-danger">Remover</button>
-                            </div>
-                        </li>
-                        <li class="item-dispo">
-                            <p>Sala de Estar - Local principal com dispositivos integrados </p>
-                            <div class="btn">
-                                <button class="btn-small">Editar</button>
-                                <button class="btn-small btn-danger">Remover</button>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        </section>
+.items-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
 
-        <section class="section-box" id="personalize">
-            <div class="text">
-                <h3 class="title">Configurações Personalizadas</h3>
-                <p class="subtitle">Personalize o funcionamento do sistema para atender às suas preferências:</p>
-            </div>
+.items-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgba(160, 160, 160, 1);
+}
 
-            <div class="text-dispo">
-                <form action="#">
-                    <label for="frequencia-atualizacao">Frequência de Atualização:</label>
-                    <select id="frequencia-atualizacao" name="frequencia-atualizacao">
-                    <option value="1min">A cada 1 minuto</option>
-                    <option value="5min">A cada 5 minutos</option>
-                    <option value="10min">A cada 10 minutos</option>
-                    </select>
-                    
-                    <label for="notificacoes">Notificações:</label>
-                    <select id="notificacoes" name="notificacoes">
-                    <option value="ativado">Ativado</option>
-                    <option value="desativado">Desativado</option>
-                    </select>
-                    
-                    <button type="submit" class="btn-att">Salvar Configurações</button>
-                </form>
-            </div>
-        </section>
-    </main>
-</body>
-</html>
+.items-nav a:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.all-info {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+}
+
+/*INÍCIO DA 1° SESSÃO*/
+.section-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 40px;
+    border-bottom: solid 1px #025159;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #025159;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.title {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: bolder;
+    color: #ffffff;
+    font-size: 25px;
+}
+.subtitle {
+    color: #ffffff;
+}
+
+.saude-usuario {
+    display: flex;
+    gap: 30px;
+}
+
+.item-info {
+    background-color: #048C8C;
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.imagem-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imagem-item img {
+    width: 120px;
+}
+
+.legenda-item {
+    color: #04BFBF;
+    padding: 5px 15px;
+    background-color: #025159;
+    border-radius: 15px;
+    border: solid 2px #fff;
+}
+/*FIM DA 1° SESSÃO*/
+
+/*INÍCIO DA 2°/3° SESSÃO*/
+.section-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 40px;
+    border-bottom: solid 1px #025159;
+}
+
+.controle-dispo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-dispo {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #025159;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-dispositivo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-dispositivo label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #025159;
+}
+
+.add-dispositivo input[type="text"], .add-dispositivo select ,textarea{
+    color: #025159;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #025159;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.add-dispositivo .btn {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #025159;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-dispositivo .btn:hover {
+    background-color: #04BFBF;
+    color: #025159;
+}
+
+.title-dispo {
+    font-size: 24px;
+    color: #025159;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item-dispo {
+    border: 1px solid #025159;
+    border-radius: 6px;
+    padding: 15px 16px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #025159;
+}
+
+.btn-small {
+    font-size: 12px;
+    padding: 6px 12px;
+    color: #fff;
+    background-color: #025159;
+    border: solid 3px ;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.btn-small:hover {
+    background-color: #04BFBF;
+    color: #025159;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+    color: #fff;
+}
+/*FIM DA 2°/3° SESSÃO*/
+
+/*INÍCIO DA ÚLTIMA SESSÃO*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #025159;
+    margin-bottom: 6px;
+}
+
+form input[type="text"],form select {
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #025159;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.btn-att {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #025159;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-att:hover {
+    background-color: #03989e;
+}
+
+/*FIM DA ÚLTIMA SESSÃO*/
