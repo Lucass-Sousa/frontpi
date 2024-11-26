@@ -68,3 +68,10 @@
         flex-direction: column;
     }
 }
+
+@media (max-width: 425px) {
+    .saude-usuario {
+        width: 95%;
+    }
+}
+
