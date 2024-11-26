@@ -68,10 +68,23 @@
         flex-direction: column;
     }
 }
-
 @media (max-width: 425px) {
+    body {
+        align-items: center;
+    }
+    .user {
+        gap: 5px;
+    }
+    .user figure img{
+        width: 50px;
+    }
+    .logo-projeto img{
+        width: 150px;
+    }
+    .mobile-menu {
+        width: 50px;
+    }
     .saude-usuario {
         width: 95%;
     }
 }
-
