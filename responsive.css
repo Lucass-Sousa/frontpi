@@ -1,0 +1,242 @@
+@media (max-width: 600px) {
+    body {
+        flex-direction: column;
+    }
+
+    .lateral-info {
+        height: auto;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .logo-projeto img {
+        width: 150px;
+    }
+
+    .user figure img {
+        width: 80px;
+    }
+
+    .items-nav {
+        gap: 20px;
+    }
+
+    .items-nav a {
+        font-size: 14px;
+    }
+
+    .all-info {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .section-box {
+        gap: 15px;
+    }
+
+    .saude-usuario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-info {
+        width: 100%;
+    }
+
+    .controle-dispo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add-dispositivo input[type="text"],.add-dispositivo select,textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .item-dispo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-small {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    .btn-att {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+
+    .lateral-info {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .logo-projeto img {
+        width: 160px;
+    }
+
+    .user figure img {
+        width: 85px;
+    }
+
+    .items-nav {
+        gap: 20px;
+    }
+
+    .items-nav a {
+        font-size: 15px;
+    }
+
+    .all-info {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .section-box {
+        gap: 18px;
+    }
+
+    .saude-usuario {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item-info {
+        width: 100%;
+    }
+
+    .controle-dispo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .add-dispositivo input[type="text"],
+    .add-dispositivo select,
+    textarea {
+        font-size: 12px;
+        padding: 9px;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .item-dispo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-small {
+        font-size: 10px;
+        padding: 4px 8px;
+    }
+
+    .btn-att {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+
+    aside {
+        width: 30%;
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+    }
+
+    .lateral-info {
+        width: 100%;
+    }
+
+    .logo-projeto img {
+        width: 180px;
+    }
+
+    .user figure img {
+        width: 90px;
+    }
+
+    .items-nav {
+        gap: 25px;
+    }
+
+    .items-nav a {
+        font-size: 16px;
+    }
+
+    .all-info {
+        width: 60%;
+        padding: 15px;
+    }
+
+    .section-box {
+        gap: 20px;
+    }
+
+    .saude-usuario {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .item-info {
+        width: 100%;
+    }
+
+    .controle-dispo {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .add-dispositivo input[type="text"],
+    .add-dispositivo select,
+    textarea {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .item-dispo {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .btn-small {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+
+    .btn-att {
+        font-size: 15px;
+        padding: 10px;
+    }
+}

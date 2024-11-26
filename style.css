@@ -1,0 +1,289 @@
+/*IMPORTAÇÃO DAS FONTES*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #025159 ;
+    display: flex;
+    padding: 30px 20px;
+}
+
+header {
+    background-color: #025159 ;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.logo-projeto img {
+    width: 200px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.user figure img {
+    width: 100px;
+    border-radius: 100%;
+    border: solid 3px #03989e;
+}
+
+.user h3 {
+    color: #fff;
+    font-weight: bolder;
+
+}
+
+.lista-nav {
+    padding: 0 20px;
+}
+
+.items-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.items-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: rgba(160, 160, 160, 1);
+}
+
+.items-nav a:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.all-info {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 15px;
+    padding: 20px;
+    width: 80%;
+}
+
+/*INÍCIO DA 1° SESSÃO*/
+.section-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 40px;
+    border-bottom: solid 1px #025159;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #025159;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.title {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: bolder;
+    color: #ffffff;
+    font-size: 25px;
+}
+.subtitle {
+    color: #ffffff;
+}
+
+.saude-usuario {
+    display: flex;
+    gap: 30px;
+}
+
+.item-info {
+    background-color: #048C8C;
+    width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.imagem-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.imagem-item img {
+    width: 120px;
+}
+
+.legenda-item {
+    color: #04BFBF;
+    padding: 5px 15px;
+    background-color: #025159;
+    border-radius: 15px;
+    border: solid 2px #fff;
+}
+/*FIM DA 1° SESSÃO*/
+
+/*INÍCIO DA 2°/3° SESSÃO*/
+.section-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 40px;
+    border-bottom: solid 1px #025159;
+}
+
+.controle-dispo {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-dispo {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #025159;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-dispositivo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-dispositivo label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #025159;
+}
+
+.add-dispositivo input[type="text"], .add-dispositivo select ,textarea{
+    color: #025159;
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #025159;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.add-dispositivo .btn {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #025159;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-dispositivo .btn:hover {
+    background-color: #04BFBF;
+    color: #025159;
+}
+
+.title-dispo {
+    font-size: 24px;
+    color: #025159;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item-dispo {
+    border: 1px solid #025159;
+    border-radius: 6px;
+    padding: 15px 16px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #025159;
+}
+
+.btn-small {
+    font-size: 12px;
+    padding: 6px 12px;
+    color: #fff;
+    background-color: #025159;
+    border: solid 3px ;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.btn-small:hover {
+    background-color: #04BFBF;
+    color: #025159;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+    color: #fff;
+}
+/*FIM DA 2°/3° SESSÃO*/
+
+/*INÍCIO DA ÚLTIMA SESSÃO*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #025159;
+    margin-bottom: 6px;
+}
+
+form input[type="text"],form select {
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #025159;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.btn-att {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #025159;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-att:hover {
+    background-color: #03989e;
+}
+
+/*FIM DA ÚLTIMA SESSÃO*/
