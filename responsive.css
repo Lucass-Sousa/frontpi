@@ -139,4 +139,8 @@
     .mobile-menu {
         width: 50px;
     }
+    .subtitle {
+        font-size: 13px;
+        text-align: center;
+    }
 }
