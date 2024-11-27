@@ -143,4 +143,7 @@
         font-size: 13px;
         text-align: center;
     }
+    .text {
+        width: 370px;
+    }
 }
