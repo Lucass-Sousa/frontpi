@@ -22,6 +22,7 @@
     .user {
         align-items: center;
     }
+
 }
 
 @media (max-width: 1024px) {
@@ -38,23 +39,52 @@
         margin: 5px 0;
         border: solid 1px #fff;
     }
+    .imagem-item {
+        align-items: center;
+    }
+    .saude-usuario {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .item-info {
+        align-items: center;
+        width: 200px;
+        height: 300px;
+    }
+    .item-info span {
+        font-size: 15px;
+    }
+    .title-item {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 768px) {
+    .all-info {
+        align-items: center;
+    }
     .saude-usuario {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     .item-info {
-        flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        width: 95%;
+        width: 280px;
+        height: 300px;
     }
     .controle-dispo {
         flex-direction: column;
         width: 95%;
+    }
+    .text {
+        width: 650px;
+    }
+    .text h3 {
+        font-size: 20px;
     }
 }
 
@@ -62,7 +92,10 @@
 
     .saude-usuario {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+    }
+    .item-info {
+        width: 400px;
     }
     .btn {
         display: flex;
@@ -80,10 +113,19 @@
     .mobile-menu {
         width: 50px;
     }
+    .section-box, .text {
+        align-items: center;
+        width: 95%;
+    }
+
 }
+
 @media (max-width: 425px) {
     body {
         align-items: center;
+    }
+    .item-info{
+        width: 350px;
     }
     .user {
         gap: 5px;
@@ -96,8 +138,5 @@
     }
     .mobile-menu {
         width: 50px;
-    }
-    .saude-usuario {
-        width: 95%;
     }
 }
