@@ -6,75 +6,100 @@ body {
     font-family: "Montserrat", sans-serif;
     background-color: #025159;
     display: flex;
-    padding: 30px 20px;
-    max-width: 1280px;
-}
+    justify-content: center;
 
-header {
-    background-color: #025159;
-    height: 100%;
+}
+/*ÁREA CONTENT*/
+.content{
+    padding: 20px 20px;
+    display: flex;
+    gap: 20px;
+}
+/*ÁREA CONTENT FIM*/
+
+/*ÁREA DO HEADER*/
+/*MENU*/
+.menu {
     display: flex;
     padding: 0 10px;
     align-items: center;
     flex-direction: column;
-    gap: 50px;
+    gap: 60px;
+    width: 20%;
 }
+/*MENU FIM*/
 
+/*NAV-USER*/
+.nav-user {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+/*NAV-USER FIM*/
+
+/*LOGO PROJETO*/
 .logo-projeto img {
     width: 200px;
 }
+/*LOGO PROJETO FIM*/
 
+/*NAVEGAÇÃO DO USUÁRIO*/
+.lista-nav {
+    text-align: center;
+}
+.items-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.items-nav a{
+    text-decoration: none;
+    font-weight: 500;
+    color: rgba(160, 160, 160, 1);
+}
+.items-nav a:hover {
+    color: #fff;
+    transition: 0.3s;
+    font-weight: bolder;
+    padding: 10px;
+    background-color: rgba(160, 160, 160, 0.5);
+    border-radius: 25px;
+}
+/*NAVEGAÇÃO DO USUÁRIO FIM*/
+
+/*PERFIL USUÁRIO*/
 .user {
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 15px;
 }
-
-.user figure img {
-    width: 100px;
-    border-radius: 100%;
-    border: solid 3px #03989e;
-}
-
 .user h3 {
     color: #fff;
     font-weight: bolder;
 }
-
-.lista-nav {
-    padding: 0 20px;
+.user img {
+    width: 100px;
+    border-radius: 100%;
+    border: solid 3px #03989e;
 }
+/*PERFIL USUÁRIO FIM*/
 
-.items-nav {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
+/*ÁREA DO MAIN*/
 
-.items-nav a {
-    text-decoration: none;
-    font-weight: 500;
-    color: rgba(160, 160, 160, 1);
-    transition: color 0.3s, transform 0.3s;
-}
-
-.items-nav a:hover {
-    color: #fff;
-    transform: scale(1.1);
-}
-
-.all-info {
+/*TODAS AS CAIXAS*/
+.box-sections {
     background-color: #fff;
     display: flex;
     flex-direction: column;
     gap: 40px;
     border-radius: 15px;
     padding: 20px;
-    width: 80%;
+    width: 75%;
 }
+/*TODAS AS CAIXAS FIM*/
 
-/*INÍCIO DA 1° SESSÃO*/
+/*CONFIG DA CAIXA*/
 .section-box {
     display: flex;
     flex-direction: column;
@@ -82,8 +107,10 @@ header {
     padding-bottom: 40px;
     border-bottom: solid 1px #025159;
 }
+/*CONFIG DA CAIXA FIM*/
 
-.text {
+/*CONFIG DO TITULO DAS SESSÕES*/
+.topbar {
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -91,30 +118,38 @@ header {
     border-radius: 15px;
     padding: 10px;
 }
+/*CONFIG DO TITULO DAS SESSÕES FIM*/
 
+/*CONFIG DA FONTE DO TÍTULO e SUBTITULO*/
 .title {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: bolder;
     color: #ffffff;
     font-size: 25px;
 }
-
 .subtitle {
     color: #ffffff;
 }
+/*CONFIG DA FONTE DO TÍTULO FIM*/
 
-.saude-usuario {
-    display: flex;
-    gap: 30px;
-}
+/*CONFIG DA SESSÃO 1*/
 
-.item-info {
-    background-color: #048C8C;
-    width: 400px;
-    padding: 20px;
-    border-radius: 15px;
+/*CONFIG CAIXA FULL*/
+.box-article {
     display: flex;
     justify-content: space-between;
+}
+/*CONFIG CAIXA FULL FIM*/
+
+
+/*CONFIG CAIXA DE DADOS*/
+.item-info {
+    background-color: #048C8C;
+    width: 20%;
+    padding: 20px;
+    border-radius: 15px;
+    justify-content: flex-start;
+    display: flex;
     gap: 10px;
     flex-direction: column;
     align-items: center;
@@ -124,22 +159,9 @@ header {
     font-family: "Montserrat Alternates", sans-serif;
     transition: background-color 0.3s;
 }
+/*CONFIG CAIXA DE DADOS FIM*/
 
-.item-info:hover {
-    background-color: #03989e;
-}
-
-.imagem-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.imagem-item img {
-    width: 120px;
-}
-
+/*CONFIG LEGENDA*/
 .legenda-item {
     color: #04BFBF;
     padding: 5px 15px;
@@ -148,27 +170,64 @@ header {
     border: solid 2px #fff;
     transition: background-color 0.3s;
 }
+/*CONFIG LEGENDA FIM*/
 
-.legenda-item:hover {
-    background-color: #03989e;
-}
-/*FIM DA 1° SESSÃO*/
-
-/*INÍCIO DA 2°/3° SESSÃO*/
-.section-box {
+/*CONFIG DOS GRÁFICOS*/
+.imagem-item {
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding-bottom: 40px;
-    border-bottom: solid 1px #025159;
+    align-items: center;
+    gap: 10px;
 }
 
-.controle-dispo {
+.imagem-item img {
+    width: 100px;
+}
+/*CONFIG DOS GRÁFICOS FIM*/
+
+/*CONFIG BOTAO SINCRONIZAR*/
+.btn-att {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #025159;
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-att:hover {
+    background-color: #03989e;
+}
+/*CONFIG BOTAO SINCRONIZAR FIM*/
+/*CONFIG DA SESSÃO 1 FIM*/
+
+/*CONFIG SESSÃO 2*/
+
+/*CONFIG DA SESSÃO 3*/
+
+/*CONFIG DA SESSÃO FULL*/
+.controle {
     display: flex;
-    justify-content: space-around;
+    gap: 30px;
+}
+/*CONFIG DA SESSÃO 2 FULL FIM*/
+
+/*CONFIG DAS CAIXAS SESSÃO 2/3*/
+.adicionar , .registro{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 2px #025159;
+    padding: 15px;
+    border-radius: 15px;
 }
 
-.title-dispo {
+.title-controle {
     font-size: 24px;
     font-weight: bolder;
     color: #025159;
@@ -176,10 +235,14 @@ header {
     margin-bottom: 20px;
 }
 
+/*CONFIG DAS CAIXAS SESSÃO 2 FIM*/
+
+/*CONFIG DAS CAIXAS ESPECÍFICAS SESSÃO CADASTRO 2*/
 .add-dispositivo {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+    width: 100%;
 }
 
 .add-dispositivo label {
@@ -220,35 +283,29 @@ header {
     color: #025159;
     transform: scale(1.05);
 }
+/*CONFIG DAS CAIXAS ESPECÍFICAS SESSÃO 2 CADASTRO FIM*/
 
-.title-dispo {
-    font-size: 24px;
-    color: #025159;
-    text-align: center;
-    margin-bottom: 20px;
+/*CONFIG DAS CAIXAS ESPECÍFICAS SESSÃO REGISTRO2/3*/
+.registro {
+    gap: 85px;
 }
 
-
 .item-dispo {
-    gap: 10px;
     border: 1px solid #025159;
     border-radius: 6px;
     padding: 15px 16px;
     margin-bottom: 12px;
     display: flex;
+    gap: 10px;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     font-size: 14px;
     color: #025159;
-    transition: background-color 0.3s;
-}
-
-.item-dispo:hover {
-    background-color: #03989e;
-    color: #fff;
+    font-weight: bold;
 }
 
 .btn-small {
+    width: 100px;
     font-size: 12px;
     padding: 6px 12px;
     color: #fff;
@@ -256,8 +313,6 @@ header {
     border-radius: 10px;
     border: none;
     margin: 1px;
-    cursor: pointer;
-    text-transform: uppercase;
     transition: background-color 0.3s, transform 0.3s;
 }
 
@@ -320,4 +375,10 @@ form input[type="text"]:hover, form select:hover {
 .btn-att:hover {
     background-color: #03989e;
 }
-/*FIM DA ÚLTIMA SESSÃO*/
+/*ULTIMA SESSÃO FIM*/
+
+
+/*CONFIG DA SESSÃO 2 FIM*/
+
+
+
