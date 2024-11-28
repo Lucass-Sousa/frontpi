@@ -3,109 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CareTech Software</title>
+    <title>CareTech</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
-    <header class="lateral-info">
-        <div class="logo-projeto">
-            <figure>
-                <img src="https://cdn.discordapp.com/attachments/1298379995223167046/1310830203521597470/logo_pi.png?ex=6746a542&is=674553c2&hm=d14c02d04414246d26f737f010708fcbe06fa7bbc6781736ee57a3620c6a0219&" alt="Logo CareTech">
-            </figure>
-        </div>
-        <div class="mobile-menu">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <nav class="lista-nav" >
-            <ul class="items-nav">
-                <li>
-                    <a href="#pulseira-info">Pulseira</a>
-                </li>
-                <li>
-                    <a href="#locais">Locais</a>
-                </li>
-                <li>
-                    <a href="#dispositivos">Dispositivos IoT</a>
-                </li>
-                <li>
-                    <a href="#emergencia">Contatos de Urgência</a>
-                </li>
-                <li>
-                    <a href="#configuracoes">Configurações</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="user">
-            <figure>
-                <img src="https://img.freepik.com/vetores-premium/icone-perfil-simples-cor-branco-icone_1076610-50204.jpg?semt=ais_hybrid" alt="Usuario">
-            </figure>
-            <h3>Robson Brito</h3>
-        </div>
-    </header>
-
-    <main class="all-info">
-        <section class="section-box" id="pulseira">
-            <div class="text">
-                <h3 class="title">Informações da Pulseira (FITBIT - SENSE2) </h3>
-                <p class="subtitle">Acompanhe os dados mais recentes da sua saúde:</p>
+    <div class="content">
+        <header class="menu"><!--CABEÇALHO DO PROJETO-->
+            <div class="logo-projeto"><!--LOGO PROJETO-->
+                <figure>
+                    <img src="/banco de imagens/logo_pi.png" alt="Logo CareTech">
+                </figure>
             </div>
 
-            <div class="saude-usuario">
-                <div class="item-info">
-                    <h3 class="title-item">Batimentos Cardíacos</h3>
-                    <figure class="imagem-item">
-                        <img src="banco de imagens/37.5 por cento batimento cardíaco.png" alt="Ilustração batimento">
-                        <figcaption class="legenda-item">75 BPM</figcaption>
-                    </figure>
-                    <span>Última atualização: 5 segundos atrás</span>
+            <div class="nav-user"><!--JUNÇÃO DA NAV COM ÁREA USER-->
+                <div class="mobile-menu"><!--USADO EM MOBILE-->
+                    <div></div>
+                    <div></div>
+                    <div></div>
                 </div>
 
-                <div class="item-info">
-                    <h3 class="title-item">Nível de Estresse</h3>
-                    <figure class="imagem-item">
-                        <img src="banco de imagens/33 por cento.png" alt="Ilustração batimento">
-                        <figcaption class="legenda-item">MODERADO</figcaption>
-                    </figure>
-                    <span>Interação sugerida: Respiração guiada</span>
-                </div>
+                <nav class="lista-nav" ><!--NAVEGAÇÃO DO USUÁRIO-->
+                    <ul class="items-nav">
+                        <li><a href="#pulseira-info">Pulseira</a></li>
+                        <li><a href="#perfil">Perfil de Surto</a></li>
+                        <li><a href="#locais">Locais</a></li>
+                        <li><a href="#dispositivos">Dispositivos</a></li>
+                        <li><a href="#emergencia">Emergência</a></li>
+                        <li><a href="#notify">Notificações</a></li>
+                    </ul>
+                </nav>
 
-                <div class="item-info">
-                    <h3 class="title-item">Oxigenação / Sangue</h3>
-                    <figure class="imagem-item">
-                        <img src="banco de imagens/98 por cento.png" alt="Ilustração batimento">
-                        <figcaption class="legenda-item">98% IDEAL</figcaption>
+                <div class="user"><!--INFO USUÁRIO-->
+                    <figure>
+                        <img src="https://img.freepik.com/vetores-premium/icone-perfil-simples-cor-branco-icone_1076610-50204.jpg?semt=ais_hybrid" alt="Usuario">
                     </figure>
-                    <span>Última atualização: 5 segundos atrás</span>
-                </div>
-
-                <div class="item-info">
-                    <h3 class="title-item">Temperatura da Pele</h3>
-                    <figure class="imagem-item">
-                        <img src="banco de imagens/36.5 por cento.png" alt="Ilustração batimento">
-                        <figcaption class="legenda-item">36.5°C</figcaption>
-                    </figure>
-                    <span>Dentro do intervalo normal</span>
+                    <h3>Robson Brito</h3>
                 </div>
             </div>
-            <button type="submit" class="btn-att">Sincronizar Dados</button>
-        </section>
+        </header>
 
-        <section class="section-box" id="tecnologias">
-                <div class="text">
-                    <h3 class="title">Gerenciar Dispositivos IoT</h3>
-                    <p class="subtitle">Adicione e gerencie seus dispositivos IoT no sistema:</p>
+        <main class="box-sections"><!--CONTEÚDO PRINCIPAL DO PROJETO-->
+            <section class="section-box" id="pulseira">
+                <header class="topbar"><!--TOPO DA SESSÃO-->
+                    <h3 class="title">Informações da Pulseira (FITBIT - SENSE2) </h3>
+                    <p class="subtitle">Acompanhe os dados mais recentes da sua saúde:</p>
+                </header>
+
+                <div class="box-article"><!--ÁREA COM TODOS OS ARTIGOS DA CAIXA-->
+                    <article class="item-info"><!--ITEM 1-->
+                        <h3 class="title-item">Batimentos Cardíacos</h3>
+                            <figure class="imagem-item">
+                                <img src="banco de imagens/37.5 por cento batimento cardíaco.png" alt="Ilustração batimento">
+                                <figcaption class="legenda-item">125 BPM</figcaption>
+                            </figure>
+                            <span>Interação Sugerida: Contatar Prioridade Alta</span>
+                    </article>
+
+                    <article class="item-info"><!--ITEM 2-->
+                        <h3 class="title-item">Nível de Estresse</h3>
+                            <figure class="imagem-item">
+                                <img src="banco de imagens/33 por cento.png" alt="Ilustração batimento">
+                                <figcaption class="legenda-item">Acima do Normal</figcaption>
+                            </figure>
+                            <span>Interação sugerida: Respiração guiada</span>
+                    </article>
+
+                    <article class="item-info"><!--ITEM 3-->
+                        <h3 class="title-item">Oxigenação / Sangue</h3>
+                            <figure class="imagem-item">
+                                <img src="banco de imagens/98 por cento.png" alt="Ilustração batimento">
+                                <figcaption class="legenda-item">88% Baixa</figcaption>
+                            </figure>
+                            <span>Interação Sugerida: Contatar Prioridade Alta</span>
+                    </article>
+
+                    <article class="item-info"><!--ITEM 4-->
+                        <h3 class="title-item">Temperatura Corporal</h3>
+                            <figure class="imagem-item">
+                                <img src="banco de imagens/36.5 por cento.png" alt="Ilustração batimento">
+                                <figcaption class="legenda-item">37.0°C Febril</figcaption>
+                            </figure>
+                            <span>Interação Sugerida: Contatar Prioridade Média</span>
+                    </article>
                 </div>
-            
-            <div class="controle-dispo">
-                <div class="adicionar">
-                    <div class="text-dispo">
-                        <h3 class="title-dispo">Adicionar Dispositivos</h3>
+
+                <button type="submit" class="btn-att">Sincronizar Dados</button>
+            </section>
+
+            <section class="section-box" id="perfil">
+                <header class="topbar">
+                    <h3 class="title">Gerenciar Perfis</h3>
+                    <p class="subtitle">Adicione e gerencie seu perfil no sistema:</p>
+                </header>
+
+                <div class="controle">
+
+                    <div class="adicionar"><!--CAMPO PARA REGISTRO-->
+                        <h3 class="title-controle">Cadastro de Perfil</h3>
+                        <form class="add-dispositivo"><!--FORMULÁRIO PARA ADIÇÃO DE DISPOSITIVO-->
+                            <label for="dispositivo">Nome do Perfil:</label>
+                            <input type="text" id="dispositivo" name="dispositivo" placeholder="Ex: Pânico" required>
+                            
+                            <label for="tipo">Predefinição Para:</label>
+                            <select id="tipo" name="tipo">
+                            <option value="crise-ansiedade">Crise de Ansiedade</option>
+                            <option value="estresse">Estresse</option>
+                            <option value="claustrofobia">Claustrofobia</option>
+                            <option value="panico">Crise de Pânico</option>
+                            <option value="outro">Outro</option>
+                            </select>
+
+                            <label for="tipo">Nível de Prioridade:</label>
+                            <select id="tipo" name="tipo">
+                            <option value="crise-ansiedade">Alta</option>
+                            <option value="estresse">Média</option>
+                            <option value="claustrofobia">Baixa</option>
+                            </select>
+                            
+                            <button type="submit" class="btn">Cadastrar Perfil</button>
+                        </form>
                     </div>
-                    <form class="add-dispositivo">
+
+                    <div class="registro"><!--CAMPO PARA INFOS REGISTRADAS-->
+                        <h3 class="title-controle">Perfis Cadastrados</h3>
+                        <form class="add-dispositivo"><!--FORMULÁRIO PARA ADIÇÃO DE DISPOSITIVO-->
+                            <label for="local-associado">Selecionar Perfil:</label>
+                            <select id="local-associado" name="local-associado">
+                                <option value="p1">Perfil 1</option>
+                                <option value="p1">Cusin Triste</option>
+                                <option value="p2">Perfil 2</option>
+                                <option value="p3">Perfil 3</option>
+                                <option value="p4">Perfil 4</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                            
+                            <label for="local-associado">Execução dos Parâmetros:</label>
+                            <select id="local-associado" name="local-associado">
+                            <option value="automatica">Automático</option>
+                            <option value="nao">Manual "Com Confirmação"</option>
+                            </select>
+                            <button type="submit" class="btn">Executar Parâmetro</button>
+                        </form>
+                </div>
+            </section>
+
+            <section class="section-box" id="local">
+                <header class="topbar">
+                    <h3 class="title">Gerenciar Locais</h3>
+                    <p class="subtitle">Gerencie os locais onde seus dispositivos IoT estão instalados:</p>
+                </header>
+
+                <div class="controle">
+
+                    <div class="adicionar"><!--CAMPO PARA REGISTRO-->
+                        <h3 class="title-controle">Cadastrar Locais</h3>
+                        <form class="add-dispositivo">
+                            <label for="dispositivo">Nome do Local:</label>
+                            <input type="text" id="nome-dispo" name="dispositivo" placeholder="Ex: Sala de Estar" required>
+                            <label for="descricao">Descrição:</label>
+                            <textarea id="descricao" name="descricao" rows="3" placeholder="Ex: Local principal para monitoramento"></textarea>
+                            <button type="submit" class="btn">Adicionar Local</button>
+                        </form>
+                    </div>
+
+                    <div class="registro"><!--CAMPO PARA INFOS REGISTRADAS-->
+                        <h3 class="title-controle">Locais Cadastrados</h3>
+                        <nav class="navegacao-cadastro">
+                            <ul class="lista-dispo">
+                                <li class="item-dispo">
+                                    <p>Quarto - Monitoramento de sono ativo</p>
+                                    <div class="btn">
+                                        <button class="btn-small">EDITAR</button>
+                                        <button class="btn-small btn-danger">REMOVER</button>
+                                    </div>
+                                </li>
+                                <li class="item-dispo">
+                                    <p>Sala de Estar - Local principal com dispositivos integrados </p>
+                                    <div class="btn">
+                                        <button class="btn-small">EDITAR</button>
+                                        <button class="btn-small btn-danger">REMOVER</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-box" id="tecnologias">
+                <header class="topbar">
+                    <h3 class="title">Gerenciar Dispositivos</h3>
+                    <p class="subtitle">Adicione e gerencie seus dispositivos no sistema:</p>
+                </header>
+
+                <div class="controle">
+
+                    <div class="adicionar"><!--CAMPO PARA REGISTRO-->
+                        <h3 class="title-controle">Cadastrar Dispositivos</h3>
+                        <form class="add-dispositivo"><!--FORMULÁRIO PARA ADIÇÃO DE DISPOSITIVO-->
                             <label for="dispositivo">Nome do Dispositivo:</label>
                             <input type="text" id="dispositivo" name="dispositivo" placeholder="Ex: Soundbar JBL" required>
                             
@@ -125,102 +222,134 @@
                             <option value="garagem">Garagem</option>
                             </select>
                             <button type="submit" class="btn">Adicionar Dispositivo</button>
-                    </form>
-                </div>
+                        </form>
+                    </div>
 
-                <div class="gerenciar">
-                    <div class="text-dispo">
-                        <h3 class="title-dispo">Dispositivos Cadastrados</h3>
-                        <ul class="lista-dispo">
-                            <li class="item-dispo">
-                                <p><strong>Soundbar JBL</strong> - Local: Sala de Estar - Tipo: Som</p>
-                                <div class="btn">
-                                    <button class="btn-small">Editar</button>
-                                    <button class="btn-small btn-danger">Remover</button>
-                                </div>
-                            </li>
-                            <li class="item-dispo">
-                                <p><strong>Ar-Condicionado</strong> - Local: Quarto - Tipo: Temperatura</p>
-                                <div class="btn">
-                                    <button class="btn-small">Editar</button>
-                                    <button class="btn-small btn-danger">Remover</button>
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="registro"><!--CAMPO PARA INFOS REGISTRADAS-->
+                        <h3 class="title-controle">Dispositivos Cadastrados</h3>
+                        <nav class="navegacao-cadastro">
+                            <ul class="lista-dispo">
+                                <li class="item-dispo">
+                                    <p><strong>Soundbar</strong> - Local: Sala de Estar - Tipo: Som</p>
+                                    <div class="btn">
+                                        <button class="btn-small">EDITAR</button>
+                                        <button class="btn-small btn-danger">REMOVER</button>
+                                    </div>
+                                </li>
+                                <li class="item-dispo">
+                                    <p><strong>Ar-Condicionado</strong> - Local: Quarto - Tipo: Temperatura</p>
+                                    <div class="btn">
+                                        <button class="btn-small">EDITAR</button>
+                                        <button class="btn-small btn-danger">REMOVER</button>
+                                    </div>
+                                </li>
+                                <li class="item-dispo">
+                                    <p><strong>Cortinas</strong> - Local: Sala de Estar - Tipo: Iluminação</p>
+                                    <div class="btn">
+                                        <button class="btn-small">EDITAR</button>
+                                        <button class="btn-small btn-danger">REMOVER</button>
+                                    </div>
+                                </li>
+                                <li class="item-dispo">
+                                    <p><strong>Hub</strong> - Local: Sala de Estar - Tipo: Iluminação</p>
+                                    <div class="btn">
+                                        <button class="btn-small">EDITAR</button>
+                                        <button class="btn-small btn-danger">REMOVER</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="section-box" id="local">
-            <div class="text">
-                <h3 class="title">Gerenciar Locais</h3>
-                <p class="subtitle">Gerencie os locais onde seus dispositivos IoT estão instalados:</p>
-            </div>
-        
-        <div class="controle-dispo">
-            <div class="adicionar">
-                <div class="text-dispo">
-                    <h3 class="title-dispo">Gerenciar Locais IoT</h3>
+            <section class="section-box" id="emergência">
+                <header class="topbar">
+                    <h3 class="title">Contatos de Emergência</h3>
+                    <p class="subtitle">Adicione e gerencie seus contatos de emergência no sistema:</p>
+                </header>
+
+                <div class="controle">
+
+                    <div class="adicionar"><!--CAMPO PARA REGISTRO-->
+                        <h3 class="title-controle">Cadastrar Contatos</h3>
+                        <form class="add-dispositivo"><!--FORMULÁRIO PARA ADIÇÃO DE DISPOSITIVO-->
+                            <label for="ctt">Nome do Contato:</label>
+                            <input type="text" id="ctt" name="ctt" placeholder="Ex: Pai" required>
+                        
+                            <label for="ctt">Número do Contato:</label>
+                            <input type="text" id="ctt" name="ctt" placeholder="Ex: (88) 98843-9876" required>
+
+                            <label for="contato">Prioridade do Contato:</label>
+                            <select id="contato" name="contato">
+                            <option value="alta">Alta</option>
+                            <option value="media">Média</option>
+                            <option value="baixa">Baixa</option>
+                            </select>
+                            <button type="submit" class="btn">Cadastrar Contato</button>
+                        </form>
+                    </div>
+
+                    <div class="registro"><!--CAMPO PARA INFOS REGISTRADAS-->
+                        <h3 class="title-controle">Contatos Cadastrados</h3>
+                        <nav class="navegacao-cadastro">
+                            <ul class="lista-dispo">
+                                <li class="item-dispo">
+                                    <p><strong>Samu</strong> - 192 - Prioridade : Alta</p>
+                                    <div class="btn">
+                                        <button class="btn-small">EDITAR</button>
+                                        <button class="btn-small btn-danger">REMOVER</button>
+                                    </div>
+                                </li>
+                                <li class="item-dispo">
+                                    <p><strong>Pai</strong> - (88) 98843-9876 - Prioridade : Média</p>
+                                    <div class="btn">
+                                        <button class="btn-small">EDITAR</button>
+                                        <button class="btn-small btn-danger">REMOVER</button>
+                                    </div>
+                                </li>
+                                <li class="item-dispo">
+                                    <p><strong>Amigo</strong> - (88) 98800-9845 - Prioridade : Baixa</p>
+                                    <div class="btn">
+                                        <button class="btn-small">EDITAR</button>
+                                        <button class="btn-small btn-danger">REMOVER</button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
-                <form class="add-dispositivo">
-                        <label for="dispositivo">Nome do Local:</label>
-                        <input type="text" id="nome-dispo" name="dispositivo" placeholder="Ex: Sala de Estar" required>
-                        <label for="descricao">Descrição:</label>
-                        <textarea id="descricao" name="descricao" rows="3" placeholder="Ex: Local principal para monitoramento"></textarea>
-                        <button type="submit" class="btn">Adicionar Local</button>
-                </form>
-            </div>
+            </section>
 
-            <div class="gerenciar">
-                <div class="text-dispo">
-                    <h3 class="title-dispo">Locais Cadastrados</h3>
-                    <ul class="lista-dispo">
-                        <li class="item-dispo">
-                            <p>Quarto - Monitoramento de sono ativo</p>
-                            <div class="btn">
-                                <button class="btn-small">Editar</button>
-                                <button class="btn-small btn-danger">Remover</button>
-                            </div>
-                        </li>
-                        <li class="item-dispo">
-                            <p>Sala de Estar - Local principal com dispositivos integrados </p>
-                            <div class="btn">
-                                <button class="btn-small">Editar</button>
-                                <button class="btn-small btn-danger">Remover</button>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        </section>
+            <section class="section-box" id="personalize">
+                <header class="topbar">
+                    <h3 class="title"> Notificações do Sistema</h3>
+                    <p class="subtitle">Personalize as notificações do sistema para atender às suas preferências:</p>
+                </header>
 
-        <section class="section-box" id="personalize">
-            <div class="text">
-                <h3 class="title">Configurações Personalizadas</h3>
-                <p class="subtitle">Personalize o funcionamento do sistema para atender às suas preferências:</p>
-            </div>
-
-            <div class="text-dispo">
-                <form action="#">
-                    <label for="frequencia-atualizacao">Frequência de Atualização:</label>
-                    <select id="frequencia-atualizacao" name="frequencia-atualizacao">
-                    <option value="1min">A cada 1 minuto</option>
-                    <option value="5min">A cada 5 minutos</option>
-                    <option value="10min">A cada 10 minutos</option>
-                    </select>
-                    
+                <form action="#"><!--FORMULÁRIO FIM DE TELA-->
                     <label for="notificacoes">Notificações:</label>
                     <select id="notificacoes" name="notificacoes">
                     <option value="ativado">Ativado</option>
                     <option value="desativado">Desativado</option>
                     </select>
+
+                    <label for="frequencia-atualizacao">Frequência de Notificações:</label>
+                    <select id="frequencia-atualizacao" name="frequencia-atualizacao">
+                    <option value="5min">A cada 5 minutos</option>
+                    <option value="30min">A cada 30 minutos</option>
+                    <option value="1h">A cada 1 Hora</option>
+                    <option value="3h">A cada 3 Horas</option>
+                    <option value="nunca">Nunca</option>
+                    </select>
                     
                     <button type="submit" class="btn-att">Salvar Configurações</button>
                 </form>
-            </div>
-        </section>
-    </main>
+
+            </section>
+
+
+        </main>
+    </div>
 </body>
 </html>
