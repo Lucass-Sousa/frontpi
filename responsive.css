@@ -68,11 +68,25 @@
 
 @media (max-width: 475px) {
     .content {
-        width: 435px;
+        width: 350px;
         justify-content: center;
+        align-items: center;
+    }
+    .logo-projeto img {
+        width: 100px;
+    }
+    .menu {
+        justify-content: space-around;
+    }
+    .user {
+        gap: 5px;
+    }
+    .user img{
+        width: 50px;
+    }
     }
     .adicionar ,.registro{
-        width: 400px;
+        width: 90%;
     }
     .box-article {
         flex-direction: column;
